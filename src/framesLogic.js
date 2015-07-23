@@ -1,6 +1,6 @@
 var Frame = function(){
   this.roll1 = 0;
-  his.roll2 = 0;
+  this.roll2 = 0;
   this.rollScore = 0;
   this.bonus = 0;
   this.totalScore = 0;
