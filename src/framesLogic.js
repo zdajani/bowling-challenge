@@ -1,9 +1,9 @@
 var Frame = function(){
-this.roll1 = 0;
-this.roll2 = 0;
-this.rollScore = 0;
-this.bonus = 0;
-this.totalScore = 0;
+  this.roll1 = 0;
+  his.roll2 = 0;
+  this.rollScore = 0;
+  this.bonus = 0;
+  this.totalScore = 0;
 };
 
 Frame.prototype.roll = function (pins) {
@@ -32,4 +32,8 @@ Frame.prototype.bonusRoll = function (pins) {
 
 Frame.prototype.bonusRollAgain = function (pins) {
   this.bonus += pins;
+};
+
+Frame.prototype.calculateScore = function() {
+  return this.roll1 + this.roll2 + this.bonus;
 };
