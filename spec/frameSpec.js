@@ -6,6 +6,14 @@ describe('Bowling Frames Score', function() {
       frame = new Frame();
   });
 
+  describe('Ptolemy suggests the following public interface...', function() {
+    it('calculates the total score of the frame', function() {
+      frame.roll(4);
+      frame.rollAgain(2);
+      expect(frame.calculateScore()).toEqual(6);
+    });
+  });
+
   it('can record a roll', function() {
     frame.roll(3);
     expect(frame.roll1).toEqual(3);
